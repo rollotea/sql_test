@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Initialize connection.
-conn = st.connection('mysql', type="sql", url="mysql://root:dxftk286@localhost:3306/pets")
+conn = st.connection('mysql', type="sql", url="mysql://dbuser:dxftk286@localhost:3306/free_db")
 
 # Perform query.
 df = conn.query('SELECT * from mytable;', ttl=600)
